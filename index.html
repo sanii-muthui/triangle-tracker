@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Triangle Tracker</title>
@@ -9,34 +9,36 @@
     <body>
     <div class="container">
         <div class="jumbotron">
-            <p>INNER HTML PLACE</p>
+            <p>Solution</p>
+            <p id="output"></p>
         </div><br>
         <div class="jumbotron">
-        <form id="contact" action="" method="post">
+        <form class="form">
             <h3>Triangle Tracker</h3>
             <label>ADJACENT
             <fieldset>
-            <input placeholder="SideA" type="text" tabindex="1" required autofocus>
+            <input placeholder="SideA" type="number" id="sideA" tabindex="1" required autofocus>
             </fieldset>
         </label><br>
         <label>OPPOSITE
             <fieldset>
-            <input placeholder="SideB" type="email" tabindex="2" required>
+            <input placeholder="SideB" type="number" id="sideB" tabindex="2" required>
             </fieldset>
         </label><br>
         <label>HYPOTENUSE
             <fieldset>
-            <input placeholder="sideC" type="tel" tabindex="3" required>
+            <input placeholder="sideC" type="number" id="sideC" tabindex="3" required>
             </fieldset>
         </label>
             <fieldset>
-            <button name="submit" class="btn btn-outline-primary"type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            <button name="submit" class="btn btn-outline-primary"type="submit" id="contact-submit" data-submit="...Sending">Refresh</button>
+            <button name="submit" class="btn btn-outline-primary"type="submit" value="check" onClick="result();">Submit</button>
+            <button name="submit" class="btn btn-outline-primary"type="submit" value="refresh" onclick="reset();">Refresh</button>
 
             </fieldset>
         </form> 
         </div>
         
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
