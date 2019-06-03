@@ -8,10 +8,10 @@ function result(){
     }
     else if(sideA==sideB || sideA==sideC || sideB==sideC){
     display.innerHTML=("Triangle is isosceles")
-    }else if(sideA <= (sideB + sideC) || sideB <= (sideC + sideA) || sideC <= (sideA + sideB)){
-    display.innerHTML=("Not A Triangle")
+    }else if(sideA >= (sideB + sideC) || sideB >= (sideC + sideA) || sideC >= (sideA + sideB)){
+    display.innerHTML=("Triangle is scalene")
     }else{
-    display.innerHTML=("Triangle is Scalene")
+    display.innerHTML=("Not  TRIANGLE")
     }
     }
     function reset(){
